@@ -1,0 +1,379 @@
+html {
+    scroll-behavior: smooth;
+}
+*{
+    user-select: none;
+}
+:root {
+    --primary-color: rgb(20, 75, 200);
+    --primary-color-reduzed: rgba(20, 75, 200, 0.8);
+    --secondy-color: rgb(40, 172, 192);
+}
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: helvetica;
+}
+::-webkit-scrollbar {
+    width: 0.6rem;
+}
+::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+}
+::-webkit-scrollbar-thumb:hover {
+    border-radius: 20px;
+    border: 2px solid #fff;
+}
+::-webkit-scrollbar-thumb:active {
+    background-color: var(--secondy-color);
+}
+hr {
+    margin-top: -4rem;
+    height: 2px;
+    background-color: var(--secondy-color);
+    width: 90%;
+}
+
+/* Pre Seted */
+.card {
+    padding: 0 1rem;
+    padding-top: 0;
+    box-shadow: 0px 0px 4px 1px inset var(--secondy-color);
+    border-radius: 20px;
+}
+.bgblue{
+    background-color: var(--primary-color);
+    box-shadow: 0px 0px 3px 3px gray;
+}
+
+/* Slogan */
+.logoMarca {
+    aspect-ratio: 1/1;
+    width: 7rem;
+    height: 6rem;
+    object-fit: contain;
+    margin: 2rem;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    margin-bottom: 0.3rem;
+}
+.header h1 {
+    font-size: 2.4rem;
+    margin: 2rem;
+}
+.slogan {
+    text-align: center;
+}
+
+.apresentation {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Slide */
+.slider {
+    margin: 2rem;
+    width: 45rem;
+    height: 20rem;
+    overflow: hidden;
+    transition: 1s;
+}
+.slides {
+    width: 45rem;
+    height: 20rem;
+    display: flex;
+}
+.slides input {
+    display: none;
+}
+.slide {
+    width: 100%;
+    position: relative;
+    transition: 1s;
+}
+.slide img{
+    width: 45rem;
+    height: 14rem;
+    object-fit: contain;
+}
+.manual {
+    position: absolute;
+    width: 45rem;
+    display: flex;
+    justify-content: center;
+}
+.browser {
+    border: 2px solid #fff;
+    padding: 5px;
+    margin-top: -5.5rem;
+    margin-bottom: 6rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    border-color: var(--primary-color-reduzed);
+}
+.browser:hover {
+    background-color: var(--secondy-color);
+}
+.browser:not(:last-child) {
+    margin-right: 1rem;
+}
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+#radio2:checked ~ .first {
+    margin-left: -100%;
+}
+#radio3:checked ~ .first {
+    margin-left: -200%;
+}
+.navigation {
+    position: absolute;
+    width: 45rem;
+    margin-top: 20rem;
+    display: flex;
+    justify-content: center;
+}
+.navigation div {
+    border: 2px solid gray;
+    padding: 5px;
+    margin-top: -5.5rem;
+    margin-bottom: 6rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.navigation div:not(:last-child){
+    margin-right: 1rem;
+}
+#radio1:checked ~ .navigation .auto-btn1 {
+    background-color: var(--secondy-color);
+}
+#radio2:checked ~ .navigation .auto-btn2 {
+    background-color: var(--secondy-color);
+}
+#radio3:checked ~ .navigation .auto-btn3 {
+    background-color: var(--secondy-color);
+}
+
+/* Buttons */
+.buttons{
+    display: grid;
+    margin: 2rem;
+    height: 15rem;
+}
+.button {
+    background-color: var(--secondy-color);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 2rem;
+    border-color: var(--primary-color);
+    border-style: outset;
+}
+.button a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.button:not(:hover) {
+    transition: 0.5s;
+}
+.button:hover {
+    background-color: var(--primary-color-reduzed);
+    border-color: var(--secondy-color);
+    transition: 0.5s;
+}
+button:not(:hover) a {
+    transition: 0.5s;
+}
+button:hover a {
+    color: #fff;
+    transition: 0.5s;
+}
+button:active {
+    border-style: inset;
+}
+
+/* About Us */
+.txtAbout {
+    display: flex;
+    align-items: center;
+    margin-left: 0.3rem;
+}
+.iconEstacio {
+    width: 2rem;
+    height: 2rem;
+}
+.aboutus {
+    margin-bottom: 2rem;
+}
+.aboutus h2 {
+    display: flex;
+    margin: 1rem;
+}
+.about-info {
+    display: flex;
+    justify-content: space-between;
+}
+.about-info:last-child{
+    margin-right: 2rem;
+}
+.funcs {
+    margin-left: 2rem;
+    width: 17rem;
+    object-fit: contain;
+}
+.table {
+    margin-left: 1rem;
+}
+.aboutListTittle {
+    font-size: 20px;
+}
+.aboutListContent li{
+    font-size: 1.5rem;
+}
+.aboutListTittle-funcs {
+    width: 25rem;
+    text-align: center;
+}
+.workUs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.funcs-workus {
+    width: 20rem;
+    height: 12rem;
+    object-fit: cover;
+}
+.workUs button{
+    font-size: 22px;
+    font-weight: bold;
+    width: 16rem;
+}
+.material-symbols-outlined {
+    font-size: 18px !important;
+}
+.workUs button:not(:hover) {
+    transition: 0.5s;
+}
+.workUs button:hover {
+    color: #fff;
+    transition: 0.5s;
+}
+
+/* Why Estacio */
+.why {
+    padding-bottom: 1rem;
+}
+.srtWhy {
+    display: flex;
+    align-items: center;
+    margin-left: 0.3rem;
+}
+.srtWhy h2 {
+    margin-left: 1rem;
+}
+.txtWhy {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+.txtWhy p {
+    margin-top: 0;
+    width: 17rem;
+    font-size: 19px;
+}
+.mainWhy {
+    display: flex;
+    justify-content: space-around;
+}
+.tableMEC table {
+    border-collapse: collapse;
+    border: 2.5px solid var(--secondy-color);
+    padding: 1rem;
+    width: 20rem;
+    text-align: center;
+}
+.spanMEC {
+    width: 20rem;
+    font-size: 19px;
+}
+th {
+    padding: 0.4rem;
+}
+td {
+    padding: 0.4rem;
+    justify-content: center;
+}
+.comeOn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30rem;
+}
+.student {
+    aspect-ratio: 1/1;
+    margin: 0;
+    width: 14rem;
+    height: 12rem;
+    object-fit: cover;
+}
+.student-btn {
+    font-size: 22px;
+    font-weight: bold;
+    width: 16rem;
+    margin: 1rem 0;
+}
+.student-btn:hover {
+    color: #fff;
+}
+
+/* Courses */
+.txtCourses {
+    display: flex;
+    align-items: center;
+    margin-left: 0.3rem;
+}
+.txtCourses h2 {
+    margin-left: 1rem;
+}
+
+/* Labs */
+.txtLabs {
+    display: flex;
+    align-items: center;
+    margin-left: 0.3rem;
+}
+.txtLabs h2 {
+    margin-left: 1rem;
+}
+
+/* footer */
+.footer {
+    margin-bottom: 0;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+.footer span{
+    font-size: 11px;
+}
+.footer .material-symbols-outlined {
+    font-size: 11px !important;
+}

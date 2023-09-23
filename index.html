@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo_estacio_fav.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/preLoader.css">
+    <script src="js/preLoader.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <title>Venha para a Estácio!</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<!--pre loader-->
+<body onload="loading()">
+<main class="box-load">
+    <div class="pre"></div>
+</main>
+
+<main class="content">
+        
+        <section class="header bgblue">
+            <img src="img/logo_estacio.png" alt="Logo Marca" class="logoMarca">
+
+            <div class="slogan">
+                <h1>VENHA PARA A MELHOR UNIVERSIDADE</h1>
+                    <h3>Faça cursos de graduação do seu jeito: Presencial, SemiPresencial e EAD</h3>
+            </div>
+        </section>
+        <section class="apresentation">
+            <div class="buttons">
+                <tr>
+                    <td><button id="button1" data-parameter="aboutus" class="button" type="button">
+                        <a>Sobre Nós</a>
+                    </button></td>
+                    <td><button id="button2" data-parameter="why" class="button" type="button">
+                            <a>Por quê Estácio</a>
+                        </button></td>
+                    <td><button id="button3" data-parameter="courses" class="button" type="button">
+                            <a>Cursos de graduação</a>
+                        </button></td>
+                    <td><button id="button4" data-parameter="labs" class="button" type="button">
+                            <a>Laboratórios</a>
+                        </button></td>
+                </tr>
+            </div>
+            
+            <!--Caroussel-->
+            <div class="slider">
+                <div class="slides">
+                    
+                    <!--buttons-->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    
+                    <!--images-->
+                    <div class="slide first">
+                        <a href="https://online.estacio.br/">
+                            <img src="img/estacio_cursos_livres.jpg" alt="Estacio Cursos Livres">
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="https://portal.estacio.br/fsp/alunos/laborat%C3%B3rios/">
+                            <img src="img/estacio_fsp.png" alt="Estácio FSP">
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="https://estacio.br/">
+                            <img src="img/crescemos_juntos.jpg" alt="Crescemos Juntos">
+                        </a>
+
+                    </div>
+
+                    <div class="navigation">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                    </div>
+
+                </div>
+                <div class="manual">
+                    <label for="radio1" class="browser"></label>
+                    <label for="radio2" class="browser"></label>
+                    <label for="radio3" class="browser"></label>
+                </div>
+            </div>
+
+        </section>
+<hr>
+<!--About us-->
+        <main id="aboutus" class="aboutus">
+            <div class="txtAbout">
+                <img src="img/icon_estacio.png" alt="ícone Estácio" class="iconEstacio">
+                    <h2>Sobre nós</h2>
+                </div>
+                <div class="about-info">
+                <img src="img/funcs.jpg" alt="Funcionários" class="funcs">
+                <div class="table card">
+                    <h4 class="aboutListTittle">Universidade ampla e dedicado a você com:</h4>
+                    <ul class="aboutListContent">
+                    <ul>
+                        <li>Professores graduados</li>
+                        <li>Laboratórios</li>
+                        <li>Graduações</li>
+                        <li>Estágios</li>
+                    </ul>
+                    </ul>
+                    <h3 class="aboutListTittle-funcs">Com trabalhadores dedicados e disciplinados prontos para atendê-los e ensinar, estamos empenhados em fornecer a melhor experiência educacional possível. Na perspectiva de uma faculdade, nosso compromisso é nutrir o potencial de nossos alunos, capacitando-os a alcançar seus objetivos acadêmicos e profissionais.</h3>
+                </div>
+                <div class="workUs card">
+                    <h4 class="aboutListTittle">Se sentiu motivado a entrar no time?</h4>
+                    <span>Clique no botão abaixo e venha com a gente!!!</span>
+                    <img style="margin: 1rem;" class="funcs-workus" src="img/funcs-1.jpg" alt="Funcionário sorridente">
+                    <a href="https://portal.estacio.br/carreiras/"><button class="button" id="button">
+                        <span class="material-symbols-outlined">open_in_new</span>
+                        Trabalhe Conosco!
+                    </button></a>
+                </div>
+                
+            </div>
+        </main>
+<!--Why Estacio-->
+        <div id="why" class="why bgblue">
+            <div class="srtWhy">
+                <img src="img/icon_estacio.png" alt="ícone Estácio" class="iconEstacio">
+                    <h2>Por que Estácio</h2>
+            </div>
+            
+            <main class="mainWhy">
+
+                <section class="txtWhy">
+                    <h3>A Estácio é aprovado pelo MEC,</h3>
+                    <p>
+                    e recebeu avaliações notavelmente altas do MEC, evidenciando seu compromisso com a qualidade em aspectos como infraestrutura, planejamento pedagógico, qualidade dos cursos e qualificação dos professores. Essas altas notas demonstram a excelência educacional oferecida pela instituição.
+                    </p>
+                </section>
+
+                <section class="tableMEC">
+                    <table border="1">
+                        <tr>
+                            <th>CATEGORIA</th>
+                            <th>NOTA</th>
+                        </tr>
+                        <tr>
+                            <td>CONCEITO INSTITUCIONAL</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>CONCEITO INSTITUCIONAL EAD</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>ÍNDICE GERAL DE CURSOS</td>
+                            <td>3</td>
+                        </tr>
+                    </table>
+                    <p class="spanMEC">
+                        A Estácio tem extrema preocupação com a qualidade do corpo docente, então, quando se tornar um aluno Estácio, você pode ficar tranquilo. Os professores da instituição têm, além de uma formação de qualidade, vivência no mercado de trabalho. Eles estão preparados para mostrar a teoria e a prática para você.
+                    </p>
+                </section>
+                <section class="comeOn card">
+                    <h3>Venha ser aluno você também!</h3>
+                    <span class="txt-comeOn">
+                        Clique no botão abaixo e venha fazer parte da melhor universidade do Brasil!
+                    </span>
+                    <br>
+                    <img class="student" src="img/estud.jpeg" alt="Estudante">
+                    <a href="https://estacio.br/inscricao">
+                        <button class="button student-btn" id="button" type="button">
+                        <span class="material-symbols-outlined">open_in_new</span>
+                        Ser Aluno!
+                        
+                        </button>
+                    </a>
+                </section>
+                
+            </main>
+        </div>
+<!--Courses-->
+        <div id="courses" class="courses">
+            <div class="txtCourses">
+                <img src="img/icon_estacio.png" alt="ícone Estácio" class="iconEstacio">
+                    <h2>Cursos de graduação</h2>
+                </div>
+        </div>
+<!--Laboratories-->
+        <div id="labs" class="labs bgblue">
+            <div class="txtLabs">
+                <img src="img/icon_estacio.png" alt="ícone Estácio" class="iconEstacio">
+                    <h2>Laboratórios</h2>
+                </div>
+        </div>
+
+</main>
+<div class="footer">
+    <span>
+        Feito de forma não oficial Estacio, imagens usadas são meramente ilustrativas e tiradas da internet!
+        Caso tenha algum problema, favor contatar responsável: <a href="mailto:202304280029@alunos.estacio.br">202304280029@alunos.estacio.br</a>
+        <br> 
+        <span class="material-symbols-outlined">copyright</span> Direitos atribuídos a Estácio (1970)
+    </span>
+</div>
+
+<script defer src="js/index.js"></script>
+</body>
+</html>
