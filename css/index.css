@@ -242,7 +242,7 @@ button:active {
 }
 .aboutListTittle-funcs {
     width: 25rem;
-    text-align: center;
+    text-align: justify;
 }
 .workUs {
     display: flex;
@@ -293,10 +293,14 @@ button:active {
     margin-top: 0;
     width: 17rem;
     font-size: 19px;
+    text-align: justify;
 }
 .mainWhy {
     display: flex;
     justify-content: space-around;
+}
+.tableMEC {
+    text-align: justify;
 }
 .tableMEC table {
     border-collapse: collapse;
