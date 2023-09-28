@@ -63,6 +63,8 @@ hr {
     justify-content: space-between;
     align-items: top;
     margin-bottom: 0.3rem;
+    background-image: url('../img/background.png');
+    box-shadow: 0px 0px 3px 3px gray;
 }
 .header h1 {
     font-size: 2.4rem;
@@ -344,15 +346,40 @@ td {
     color: #fff;
 }
 
-/* Courses */
-.txtCourses {
+/* Campus */
+.campus {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+}
+.srtCampus {
     display: flex;
     align-items: center;
     margin-left: 0.3rem;
 }
-.txtCourses h2 {
+.srtCampus p {
+    width: 17rem;
+    text-align: justify;
+}
+.srtCampus h2 {
     margin-left: 1rem;
 }
+#txtCampus {
+    display: flex;
+    align-items: center;
+}
+.txtCampus {
+    display: flex;
+}
+.txtCampus p {
+    width: 17rem;
+    text-align: justify;
+    font-size: 19px;
+}
+.video {
+    margin: 0 2rem;
+}
+
 
 /* Labs */
 .txtLabs {
