@@ -415,7 +415,6 @@ td {
 
 /* pre-seted */
 .buttons{
-    display: ;
     margin: 2rem;
     height: 15rem;
 }
@@ -472,7 +471,7 @@ hr {
 .navigation {
     justify-content: center;
     width: 21rem;
-    margin-top: -4rem;
+    margin-top: 16rem;
 }
 .manual {
     justify-content: center;
