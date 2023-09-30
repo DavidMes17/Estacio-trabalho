@@ -408,3 +408,83 @@ td {
 .footer .material-symbols-outlined {
     font-size: 11px !important;
 }
+
+/* responsiveness */
+
+@media only screen and (max-width: 375px) {
+
+/* pre-seted */
+.buttons{
+    display: ;
+    margin: 2rem;
+    height: 15rem;
+}
+hr {
+    margin-top: 1.5rem;
+}
+
+/* Slogan */
+.header {
+    display: flex;
+    flex-direction: column;background-image: none;
+    background-color: var(--primary-color);
+    align-items: center;
+}
+.slogan {
+    align-items: center;
+}
+.logoMarca {
+    width: 8rem;
+    height: 9rem;
+    margin: 0;
+}
+.slogan h1 {
+    font-size: 18px;
+    margin: 1rem;
+}
+
+/* Buttons */
+.apresentation {
+    display: flex;
+    flex-direction: column;
+}
+.buttons {
+    display: flex;
+    margin: 0;
+    height: 2.5rem;
+}
+.button {
+    margin: 1rem;
+    height: 2.5rem;
+    width: 10rem;
+    padding: 0;
+}
+.buttons button a {
+    font-size: 8px;
+}
+
+/* Slider */
+.slider {
+    width: 21rem;
+    height: 10rem;
+    margin: 1.5rem 1rem;
+}
+.navigation {
+    justify-content: center;
+    width: 21rem;
+    margin-top: -4rem;
+}
+.manual {
+    justify-content: center;
+    width: 21rem;
+    margin-top: -4rem;
+}
+.slide{
+    object-fit: contain;
+}
+.slides {
+    width: 21rem;
+    display: flex;
+}
+
+}
