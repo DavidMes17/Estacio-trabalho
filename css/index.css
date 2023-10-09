@@ -208,7 +208,7 @@ button:active {
 .txtAbout {
     display: flex;
     align-items: center;
-    margin-left: 0.3rem;
+    margin: 0.3rem 2rem;
 }
 .iconEstacio {
     width: 2rem;
