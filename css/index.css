@@ -407,6 +407,51 @@ td {
 }
 .footer .material-symbols-outlined {
     font-size: 11px !important;
+}.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+.grid h2 {
+    margin-top: 0;
+}
+.fundo-detalhe {
+    background: #f7f7f7;
+    border: 1px solid #e7e7e7;
+    padding: 20px;
+    border-radius: 8px;
+    display: grid;
+    margin-bottom: 2rem;
+}
+.fundo-detalhe:first-child {
+    margin-left: 2rem;
+}
+.esquerda {
+    margin-left: 2rem;
+}
+.direita {
+    margin-right: 2rem;
+}
+.fundo-detalhe:last-child {
+    margin-right: 2rem;
+}
+.subtitulo {
+    text-align: center;
+}
+.detalhe {
+    text-align: center;
+}
+.conteudo {
+    display: flex;
+    align-items: center;
+    height: 130px;
+}
+.conteudo img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    object-fit: contain;
 }
 
 /* responsiveness */
