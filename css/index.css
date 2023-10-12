@@ -473,7 +473,7 @@ td {
     }
     .aboutListTittle-funcs {
         font-size: 15px;
-        width: 20rem;
+        width: 18rem;
     }
     .aboutListTittle {
         width: 15rem;
@@ -540,6 +540,18 @@ td {
     .slider {
         margin: 2rem 0;
     }
+    .aboutListContent ul li {
+        font-size: 18px;
+        margin-left: -2rem;
+    }
+    .aboutListTittle-funcs {
+        font-size: 15px;
+        width: 16rem;
+    }
+    .workUs {
+        width: 18rem;
+        justify-content: space-around;
+    }
 }
 
 @media only screen and (max-width: 965px) {
@@ -561,6 +573,78 @@ td {
         display: flex;
         justify-content: space-around;
         width: 100%;
+    }
+    
+    .grid {
+        grid-template-columns: .4fr .4fr;
+        grid-template-rows: .4fr .4fr .4fr;
+        justify-content: space-around;
+    }
+    .fundo-detalhe {
+        margin: 0;
+    }
+    .fundo-detalhe:first-child {
+        margin: 0;
+    }
+    .esquerda {
+        margin: 0;
+    }
+    .direita {
+        margin: 0;
+    }
+    .fundo-detalhe:last-child {
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+    .baixo {
+        margin-bottom: 2rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .header {
+        background-image: none;
+        background-color: var(--primary-color);
+        flex-direction: column;
+        align-items: center;
+    }
+    .header img{
+        margin-bottom: 0;
+    }
+    .slider {
+        box-sizing: border-box;
+    width: 40rem;
+    }
+    .slide {
+    width: 40rem;
+    }
+    .slide img {
+    width: 40rem;
+    }
+    #radio1:checked ~ .first {
+        margin-left: 0;
+    }
+    #radio2:checked ~ .first {
+        margin-left: -89%;
+    }
+    #radio3:checked ~ .first {
+        margin-left: -178%;
+    }
+    .txtCampus p{
+        font-size: 17px;
+        width: 16rem;
+    }
+    .aboutus {
+        box-sizing: border-box;
+    }
+    .campus {
+        box-sizing: border-box;
+    }
+    .why {
+        box-sizing: border-box;
+    }
+    .labs {
+        box-sizing: border-box;
     }
 }
 
