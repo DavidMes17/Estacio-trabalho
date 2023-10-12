@@ -612,7 +612,6 @@ td {
         margin-bottom: 0;
     }
     .slider {
-        box-sizing: border-box;
     width: 40rem;
     }
     .slide {
@@ -634,7 +633,7 @@ td {
         font-size: 17px;
         width: 16rem;
     }
-    .aboutus {
+    .workUs {
         box-sizing: border-box;
     }
     .campus {
