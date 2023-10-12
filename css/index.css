@@ -367,6 +367,7 @@ td {
 #txtCampus {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 .txtCampus {
     display: flex;
@@ -455,6 +456,71 @@ td {
 }
 
 /* responsiveness */
+@media only screen and (max-width: 1180px) {
+    /* about us */
+    .funcs {
+        aspect-ratio: 1/1;
+        width: 10rem;
+    }
+    .aboutListTittle {
+        width: 20rem;
+    }
+    .aboutListContent ul li{
+        font-size: 20px;
+    }
+    .aboutListTittle-funcs {
+        font-size: 15px;
+        width: 20rem;
+    }
+    .aboutListTittle {
+        width: 15rem;
+    }
+    #button {
+        font-size: 15px;
+        width: 15rem;
+        margin-bottom: 1rem;
+    }
+    .funcs-workus {
+        width: 12rem;
+    }
+
+    /* Why */
+    .txtWhy h3 {
+        font-size: 20px;
+    }
+    .txtWhy p {
+        font-size: 16px;
+    }
+    .tableMEC {
+        font-size: 15px;
+    }
+    .spanMEC {
+        font-size: 16px;
+    }
+    .comeOn {
+        width: 20rem;
+    }
+    .txt-comeOn {
+        font-size: 15px;
+        width: 20rem;
+    }
+    .student {
+        height: 8rem;
+    }
+    .subtitulo {
+        font-size: 18px;
+    }
+    .conteudo img{
+        width: 5rem;
+    }
+    .detalhe {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 1015px) {
+    
+}
 
 @media only screen and (max-width: 375px) {
 
