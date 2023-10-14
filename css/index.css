@@ -97,7 +97,7 @@ hr {
     position: fixed;
     z-index: 1;
     top: 20px;
-    right: 105px;
+    right: 30px;
     background-color: var(--secondy-color);
     border: solid 4px var(--primary-color-reduzed);
     border-style: double;
