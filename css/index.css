@@ -99,6 +99,8 @@ hr {
     top: 20px;
     right: 105px;
     background-color: var(--secondy-color);
+    border: solid 4px var(--primary-color-reduzed);
+    border-style: double;
     border-radius: 3px;
     color: #fff;
     animation: slide-in-right .2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -111,6 +113,7 @@ hr {
     width: 0;
     height: 5px;
     background-color: var(--primary-color);
+    border-radius: 100px;
     animation: timer 5s forwards;
 }
 
