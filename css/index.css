@@ -646,51 +646,43 @@ td {
     }
 }
 
-@media only screen and (max-width: 700px) {
-    .header {
-        background-image: none;
-        background-color: var(--primary-color);
-        flex-direction: column;
+@media only screen and (max-width: 730px) {
+    .caroussel {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
         align-items: center;
     }
-    .header img{
-        margin-bottom: 0;
-    }
-    .slider {
-    width: 40rem;
-    }
-    .slide {
-    width: 40rem;
+    .slider{
+        width: 25rem;
+        height: 13rem;
     }
     .slide img {
-    width: 40rem;
+        width: 25rem;
+        height: 13rem;  
     }
     #radio1:checked ~ .first {
-        margin-left: 0;
+        margin-left: 0rem;
     }
     #radio2:checked ~ .first {
-        margin-left: -89%;
+        margin-left: -55.5%;
     }
     #radio3:checked ~ .first {
-        margin-left: -178%;
+        margin-left: -200%;
     }
-    .txtCampus p{
-        font-size: 17px;
-        width: 16rem;
+    .navigation {
+        width: 25rem;
     }
-    .workUs {
-        box-sizing: border-box;
+    .manual {
+        width: 25rem;
     }
-    .campus {
-        box-sizing: border-box;
-    }
-    .why {
-        box-sizing: border-box;
-    }
-    .labs {
-        box-sizing: border-box;
+    hr{
+        margin-top: 2rem;
     }
 }
+
+
 
 @media only screen and (max-width: 375px) {
 
