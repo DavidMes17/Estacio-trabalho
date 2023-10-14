@@ -40,3 +40,48 @@ button4.addEventListener("click", function(){
     var destino = document.getElementById(idDestino);
     destino.scrollIntoView();
 })
+
+/* notification */
+const btn = document.querySelector('#button')
+const btn2 = document.querySelector('.student-btn')
+const divMessage = document.querySelector('.alert')
+const msg = 'Redirecionando para um site externo'
+
+function ativar (href) {
+    const message = document.createElement('div')
+
+    const btnCancel = document.createElement('input')
+    btnCancel.setAttribute('type', 'button')
+    btnCancel.setAttribute('value', 'Cancelar')
+    btnCancel.classList.add('button')
+    btnCancel.classList.add('btn')
+    
+    message.classList.add('message')
+    message.innerText = msg
+    divMessage.appendChild(message)
+    message.appendChild(btnCancel)
+
+    notif = setTimeout(()=>{
+        message.style.display = 'none'
+        window.location.href = href
+    }, 5 * 1000)
+
+    btnCancel.addEventListener('click', ()=>{
+        clearTimeout(notif)
+        divMessage.innerHTML = '';
+    })    
+    
+}
+
+btn.addEventListener('click', ()=>{
+    href = btn.getAttribute("data-id")
+    if(href){
+        ativar(href)
+    }
+})
+btn2.addEventListener('click', ()=>{
+    href = btn2.getAttribute("data-id")
+    if(href){
+        ativar(href)
+    }
+})

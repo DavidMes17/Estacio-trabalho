@@ -14,6 +14,7 @@ body {
     padding: 0;
     border: 0;
     font-family: helvetica;
+    box-sizing: border-box;
 }
 ::-webkit-scrollbar {
     width: 0.6rem;
@@ -77,6 +78,40 @@ hr {
 .apresentation {
     display: flex;
     justify-content: space-between;
+}
+/* notification */
+.btn {
+    background-color: none;
+    cursor: pointer;
+    width: 80px;
+    margin-top: 1rem;
+}
+.btn:active {
+    border-style: inset;
+}
+.message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 19px 60px;
+    position: fixed;
+    z-index: 1;
+    top: 20px;
+    right: 105px;
+    background-color: var(--secondy-color);
+    border-radius: 3px;
+    color: #fff;
+    animation: slide-in-right .2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.message::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 5px;
+    background-color: var(--primary-color);
+    animation: timer 5s forwards;
 }
 
 /* Slide */
@@ -601,6 +636,13 @@ td {
     }
 }
 
+@media only screen and (max-width: 750px) {
+    .header{
+        background-image: none;
+        background-color: var(--primary-color);
+    }
+}
+
 @media only screen and (max-width: 700px) {
     .header {
         background-image: none;
@@ -721,4 +763,24 @@ hr {
     width: 21rem;
     display: flex;
 }
+}
+
+/* animations */
+@keyframes timer{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+@keyframes slide-in-right{
+    0%{
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
