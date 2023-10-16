@@ -682,83 +682,74 @@ td {
     }
 }
 
-
-
-@media only screen and (max-width: 375px) {
-
-/* pre-seted */
-.buttons{
-    margin: 2rem;
-    height: 15rem;
-}
-hr {
-    margin-top: 1.5rem;
-}
-
-/* Slogan */
-.header {
-    display: flex;
-    flex-direction: column;background-image: none;
-    background-color: var(--primary-color);
-    align-items: center;
-}
-.slogan {
-    align-items: center;
-}
-.logoMarca {
-    width: 8rem;
-    height: 9rem;
-    margin: 0;
-}
-.slogan h1 {
-    font-size: 18px;
-    margin: 1rem;
-}
-
-/* Buttons */
-.apresentation {
-    display: flex;
-    flex-direction: column;
-}
-.buttons {
-    display: flex;
-    margin: 0;
-    height: 2.5rem;
-}
-.button {
-    margin: 1rem;
-    height: 2.5rem;
-    width: 10rem;
-    padding: 0;
-}
-.buttons button a {
-    font-size: 8px;
+@media only screen and (max-width: 675px) {
+    .about-info {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .table {
+        width: 18rem;
+        margin: 2rem;
+    }
+    .mainWhy {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .why-txt-table {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #txtCampus {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .video {
+        margin-top: 2rem;
+        width: 18rem;
+        height: 10rem;
+    }
 }
 
-/* Slider */
-.slider {
-    width: 21rem;
-    height: 10rem;
-    margin: 1.5rem 1rem;
+@media only screen and (max-width: 550px) {
+    .header {
+        display: flex;
+        flex-direction: column;background-image: none;
+        background-color: var(--primary-color);
+        align-items: center;
+    }
+    .slogan {
+        align-items: center;
+    }
+    .logoMarca {
+        width: 8rem;
+        height: 9rem;
+        margin: 0;
+    }
+    .slogan h1 {
+        font-size: 18px;
+        margin: 1rem;
+    }
 }
-.navigation {
-    justify-content: center;
-    width: 21rem;
-    margin-top: 16rem;
+
+@media only screen and (max-width: 500px) {
+    .grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        margin: 2rem;
+        width: 15rem;
+    }
 }
-.manual {
-    justify-content: center;
-    width: 21rem;
-    margin-top: -4rem;
-}
-.slide{
-    object-fit: contain;
-}
-.slides {
-    width: 21rem;
-    display: flex;
-}
-}
+
+
 
 /* animations */
 @keyframes timer{

@@ -7,7 +7,7 @@ _RESPONSIVIDADES_
 * :white_check_mark: PC or +
 * :white_check_mark: Netbook
 * :white_check_mark: Tablet
-* :x: Mobile
+* :white_check_mark: Mobile
 
 ## QUAISQUER TIPO DE PROBLEMA CONTATAR RESPONSÁVEL PELA IDÉIA:
 
