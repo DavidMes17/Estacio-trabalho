@@ -17,5 +17,6 @@ _RESPONSIVIDADES_
         <span>DAVID DA SILVA MESQUITA</span>
         <p style="font-size: 15px">Estudante universitário e na realização do trabalho está no 2° semestre do curso de ADS na Estácio VIA CORPVS</p>
         <a href="mailto:202304280029@alunos.estacio.br">E-mail institucional</a>
+        <a href="https://web.whatsapp.com/send?phone=5585981305474">Whatsapp</a>
     </div>
 </div>
